@@ -6,15 +6,6 @@ GIT
       bootstrap-sass (~> 3.1)
 
 GIT
-  remote: git://github.com/radar/forem-redcarpet.git
-  revision: c53be9a5c3e97d65546f3f56b53f82669f3a5af5
-  specs:
-    forem-redcarpet (1.0.2)
-      nokogiri
-      pygments.rb (= 0.5.4)
-      redcarpet (= 3.0.0)
-
-GIT
   remote: git://github.com/radar/forem.git
   revision: 074629e37a2712fb346657449250eaf6b9d39881
   branch: rails4
@@ -83,6 +74,9 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.2.2)
+    forem-gfm_formatter (1.0.0)
+      forem
+      redcarpet (~> 2.0.1)
     friendly_id (5.0.4)
       activerecord (>= 4.0.0)
     gemoji (2.1.0)
@@ -104,10 +98,6 @@ GEM
     nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
-    posix-spawn (0.3.9)
-    pygments.rb (0.5.4)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.1.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -129,7 +119,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.2)
       json (~> 1.4)
-    redcarpet (3.0.0)
+    redcarpet (2.0.1)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
     sanitize (2.0.6)
@@ -173,7 +163,6 @@ GEM
       rack (>= 1.0)
     will_paginate (3.0.7)
     workflow (1.0.0)
-    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
@@ -183,7 +172,7 @@ DEPENDENCIES
   devise
   forem!
   forem-bootstrap!
-  forem-redcarpet!
+  forem-gfm_formatter
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.1.6)

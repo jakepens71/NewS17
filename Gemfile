@@ -6,7 +6,7 @@ gem 'rails', '4.1.6'
 
 gem 'forem', github: "radar/forem", branch: "rails4"
 gem 'forem-bootstrap', github: "radar/forem-bootstrap"
-gem 'forem-redcarpet', github: "radar/forem-redcarpet"
+gem 'forem-gfm_formatter'
 gem 'devise'
 gem 'will_paginate'
 # Use sqlite3 as the database for Active Record

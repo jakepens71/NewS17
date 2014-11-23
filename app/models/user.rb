@@ -12,4 +12,13 @@ class User < ActiveRecord::Base
   email
  end
 
+ def forem_avatar
+ if profilephoto != nil
+  url = profilephoto
+ else
+  url='gravatar_default.png'
+ end
+
+ end
+
 end
